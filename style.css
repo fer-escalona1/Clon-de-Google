@@ -1,75 +1,127 @@
 * {
-    font-family:"Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
+    overflow: auto;
+    margin: 0px;
+
 }
 
-li{
-    display: inline-block;
+html {
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.manita {
+    cursor: pointer;
+}
+
+img[alt="Foto de Perfil"] {
+    border-radius: 25px;
+}
+
+li {
     margin: 10px;
 }
 
-header ul{
+
+header ul {
+    list-style-type: none;
     display: flex;
     justify-content: end;
     align-items: center;
 }
 
-main{
-    height: 70vh;
-    display: flex;
+main {
+    flex-grow: 2;
+/*     height: 75vh;
+ */    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#buscador{
+#buscador {
     display: flex;
     justify-content: center;
     border: 1px solid #dfe1e5;
-    border-radius: 25px;
+    border-radius: 24px;
     min-height: 44px;
     max-width: 584px;
     width: 538px;
-    align-items: center;
-    padding: 0 8px 0 0;
-    margin: 0 auto;
 }
 
-#buscador input{
+#buscador:hover {
+    background: #fff;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+    border-color: transparent;
+}
+
+#buscador input {
     width: 400px;
     outline: none;
     border: none;
-
 }
-#buscador .icono{
+
+#buscador .icono-buscador {
     margin: 5px;
     width: 30px;
     height: 30px;
 }
 
-.iconoCuadro{
-    width: 30px;
+.icono-cuadro {
+    height: 30px;
+    padding: 4px;
 }
 
-#botones{
+.icono-cuadro:hover {
+    background-color: #dddddd;
+    border-radius: 25px;
+}
+
+#botones {
+    /* funciona con el texto, pero también funciona con los elementos inline*/
     text-align: center;
 }
 
-#botones button{
-   
+#botones button {
+    border: 1px solid #f8f9fa;
+    border-radius: 4px; /* 2, 4, 8, 16, 32 */
+    padding: 0 16px;
+    height: 40px;
+    margin: 11px 4px;
 }
 
-#logo{
-    width: 272px;
-    text-align: center;
-
+#botones button:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
 }
 
-footer ul{
+#logo {
+    width: 300px;
+    margin: 24px;
+}
+
+.flex-grow {
+    flex-grow: 2;
+}
+
+footer{
+    background-color: #f2f2f2;
+}
+
+footer ul {
     display: flex;
     list-style-type: none;
+    font-size: 15px;
+    margin: 8px auto;
 }
 
-footer >div > ul{
+footer > div > ul {
     justify-content: center;
 }
 
@@ -77,3 +129,16 @@ a[target]{
     color: #202124;
     text-decoration: none;
 }
+
+.listas-inferiores{
+    border-top: 1px solid #dadce0;
+    display: flex;
+}
+
+/* Modelo de caja: box model
+
+    margin
+    padding
+    border
+
+*/

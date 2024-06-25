@@ -52,6 +52,7 @@ main {
     min-height: 44px;
     max-width: 584px;
     width: 538px;
+    text-align: center;
 }
 
 #buscador:hover {
@@ -67,9 +68,8 @@ main {
 }
 
 #buscador .icono-buscador {
-    margin: 5px;
-    width: 30px;
-    height: 30px;
+    margin: 10px;
+    width: 25px;
 }
 
 .icono-cuadro {
